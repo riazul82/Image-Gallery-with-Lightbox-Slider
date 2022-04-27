@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <!-- gallery -->
+    <div class="container">
+        <div class="title">
+            <h1>Image Gallery</h1>
+        </div>
+
+        <div class="wrapper">
+            <ul class="filter-menu">
+                <li data-list="all" class="active-menu">All</li>
+                <li data-list="web-design">Web Design</li>
+                <li data-list="photography">Photography</li>
+                <li data-list="illustration">Illustration</li>
+            </ul>
+
+            <div class="filter-items">
+                <div class="filter-content" data-item="web-design">
+                    <img src="img/web1.jpg" alt="image1">
+                    <p>View Details</p>
+                </div>
+
+                <div class="filter-content" data-item="web-design">
+                    <img src="img/web2.jpg" alt="image2">
+                    <p>View Details</p>
+                </div>
+
+                <div class="filter-content" data-item="photography">
+                    <img src="img/photo2.jpg" alt="image5">
+                    <p>View Details</p>
+                </div>
+
+                <div class="filter-content" data-item="illustration">
+                    <img src="img/ill1.jpg" alt="image6">
+                    <p>View Details</p>
+                </div>
+
+                <div class="filter-content" data-item="illustration">
+                    <img src="img/ill2.jpg" alt="image7">
+                    <p>View Details</p>
+                </div>
+
+                <div class="filter-content" data-item="web-design">
+                    <img src="img/web3.jpg" alt="image3">
+                    <p>View Details</p>
+                </div>
+
+                <div class="filter-content" data-item="illustration">
+                    <img src="img/ill3.jpg" alt="image8">
+                    <p>View Details</p>
+                </div>
+
+                <div class="filter-content" data-item="photography">
+                    <img src="img/photo1.jpg" alt="image4">
+                    <p>View Details</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <div class="lightbox-header">
+                <p>Category: <span id="image-category">Undefined</span></p>
+                <div class="lightbox-close-btn">
+                    <span id="close-lightbox"></span>
+                </div>
+            </div>
+
+            <div class="image-wrapper">
+                <img src="img/ill1.jpg" alt="project preview">
+            </div>
+        </div>
+    </div>
+
+    <!-- lightbox left & right slide button -->
+    <div class="lightbox-arrow">
+        <span class="icon-angle-left" id="left-arrow"></span>
+        <span class="icon-angle-right" id="right-arrow"></span>
+    </div>
+
+    <!-- lightbox shadow -->
+    <div class="lightbox-shadow"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
